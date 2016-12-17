@@ -105,9 +105,9 @@
 }
 
 #myContent .btn-default {
-    background-color: #995bbe;
+    background-color: #a94442;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 #myContent #calculate-btn {
