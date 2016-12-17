@@ -22,7 +22,7 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<img alt="Grupo Arsari Logo" src="img/galogo.png" />
-					<p class="navbar-text">Array to Integer | <span>v0.2.121716</span></p>
+					<p class="navbar-text">Greatest Integer | <span>v0.3.121716</span></p>
 				</div>
 			</div>
 		</nav>
@@ -34,12 +34,12 @@
 					<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 main-box">
 						<div class="row">
 							<div class="col-xs-12" id="display">
-								<input type=text name=intnum placeholder="max digits 7" id="intnum">
+								<input type=text name=intnum placeholder="output of 7 digits" id="intnum">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-xs-12" id="separator">
-								<p>Array of Numbers to Maximum Integer Number</p>
+								<p>Enter Array of Numbers to Get Gretest Integer Number</p>
 							</div>
 						</div>
 						<div class="row">
@@ -111,12 +111,12 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5" id="calculate-btn">
-						<input name=bac class="btn btn-default" type="button" value="Find Integer" onClick="javascript:solveIntForm(this.form)">
+					<div class="col-xs-12 col-sm-4 col-sm-offset-4" id="calculate-btn">
+						<input name=bac class="btn btn-default" type="button" value="Find Gretatest Integer Number" onClick="javascript:solveIntForm(this.form)">
 					</div>
 				</div>
 				<div class="row" id="note">
-					<p>Description:</p>
+					<p>Description: The web app is a function that takes as input<br>an array of integers numbers and returns the greatest<br>integer result of combining those input numbers.</p>
 				</div>
 			</div>
 		</form>
@@ -147,12 +147,12 @@
 			// 		$("#intnum").val('Input Error!');
 			// 		return false;
 			// 	} else {
-					var evaarray = inarray;
+			var evaarray = inarray;
 			// 	}
 			// }
 
 			var myarray = evaarray.sort();
-					myarray = evaarray.reverse();
+			myarray = evaarray.reverse();
 
 			var outarray = myarray.join('');
 

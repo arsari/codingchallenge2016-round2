@@ -1,6 +1,6 @@
 /*
  * CSS style for Codetrotters Fellow 2017 Challenge 2
- * By Arturo Santago-Rivera - Dec 16, 2016
+ * By Arturo Santago-Rivera - Dec 17, 2016
  */
 
 #myHeader .navbar-default {
@@ -39,8 +39,8 @@
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #myContent #display {
@@ -54,7 +54,7 @@
     border: 0;
     width: 100%;
     margin-top: 2px;
-    padding-right: 15px;
+    padding-right: 10px;
     font-size: 3em;
     color: #ffffff;
     text-align: right;
@@ -64,6 +64,7 @@
 #myContent #separator {
     background-color: #9B9B9B;
     color: #ffffff;
+    padding: 0 10px;
 }
 
 #myContent #separator p {
