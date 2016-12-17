@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- seo meta code -->
+	<title>Array to Integer</title>
+	<meta name="description" content="Codetrotters Fellow Summer 2017 Challenge 2" />
+	<meta name="keywords" content="codetrotters, fellow" />
+	<meta name="author" content="Arturo Santiago-Rivera" />
+	<meta name="designer" content="Arturo Santiago-Rivera" />
+	<!-- css libraries -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" title="Bootstrap v3.3.7" />
+	<link rel="stylesheet" type="text/css" href="css/fellchal2.css" media="all" title="" />
+</head>
+
+<body>
+	<header id="myHeader">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<img alt="Grupo Arsari Logo" src="img/galogo.png" />
+					<p class="navbar-text">Array to Integer | <span>v0.2.121716</span></p>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main id="myContent">
+		<form method=post name=intform id="intform">
+			<div class="container">
+				<div class="row row-sides">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 main-box">
+						<div class="row">
+							<div class="col-xs-12" id="display">
+								<input type=text name=intnum placeholder="max digits 7" id="intnum">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12" id="separator">
+								<p>Array of Numbers to Maximum Integer Number</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 1</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 1" name="integer1" id="integer1">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 2</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 2" name="integer2" id="integer2">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 3</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 3" name="integer3" id="integer3">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 4</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 4" name="integer4" id="integer4">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 5</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 5" name="integer5" id="integer5">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 6</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 6" name="integer6" id="integer6">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel">
+								<p>Enter Integer Num 7</p>
+							</div>
+							<div class="col-xs-6 input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 7" name="integer7" id="integer7">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6 text-panel bottom-text-panel">
+								<p>Enter Integer Num 8</p>
+							</div>
+							<div class="col-xs-6 input-panel bottom-input-panel">
+								<input type="text" class="form-control" placeholder="Input Integer 8" name="integer8" id="integer8">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5" id="calculate-btn">
+						<input name=bac class="btn btn-default" type="button" value="Find Integer" onClick="javascript:solveIntForm(this.form)">
+					</div>
+				</div>
+				<div class="row" id="note">
+					<p>Description:</p>
+				</div>
+			</div>
+		</form>
+	</main>
+	<!-- Scripts -->
+	<script type="text/javascript" charset="UTF-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="js/bootstrap.js" title="Bootstrap v3.3.7"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('input').keypress(function(event) {
+				return /\d/.test(String.fromCharCode(event.keyCode));
+			});
+		});
+
+		function solveIntForm(form) {
+			var inarray = []
+			inarray[0] = form.integer1.value
+			inarray[1] = form.integer2.value
+			inarray[2] = form.integer3.value
+			inarray[3] = form.integer4.value
+			inarray[4] = form.integer5.value
+			inarray[5] = form.integer6.value
+			inarray[6] = form.integer7.value
+			inarray[7] = form.integer8.value
+
+			// for (i=0; i<inarray.length-1; i++) {
+			// 	if (isNaN(inarray[i])) {
+			// 		$("#intnum").val('Input Error!');
+			// 		return false;
+			// 	} else {
+					var evaarray = inarray;
+			// 	}
+			// }
+
+			var myarray = evaarray.sort();
+					myarray = evaarray.reverse();
+
+			var outarray = myarray.join('');
+
+			$('#intnum').val(outarray.substring(0, 7));
+		}
+	</script>
+</body>
+
+</html>

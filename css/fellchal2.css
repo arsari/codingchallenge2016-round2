@@ -1,0 +1,120 @@
+/*
+ * CSS style for Codetrotters Fellow 2017 Challenge 2
+ * By Arturo Santago-Rivera - Dec 16, 2016
+ */
+
+#myHeader .navbar-default {
+		background: #0c309c;
+		color: #ffffff;
+		margin-bottom: 0;
+}
+
+#myHeader .navbar-text {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+#myHeader .navbar-text span {
+    font-size: .65em;
+    color: #dddddd;
+}
+
+#myHeader img {
+    width: 50px;
+    float: left;
+    margin-left: 10px;
+    margin: 10px 10px;
+}
+
+#myContent .row-sides {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#myContent .main-box {
+    box-shadow: 0px 0px 25px #999999;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#myContent #display {
+    background-color: #333333;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#myContent #intnum {
+    background-color: #333333;
+    border: 0;
+    width: 100%;
+    margin-top: 2px;
+    padding-right: 15px;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: right;
+    height: 60px;
+}
+
+#myContent #separator {
+    background-color: #9B9B9B;
+    color: #ffffff;
+}
+
+#myContent #separator p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+#myContent .text-panel {
+    background-color: #1a7707;
+}
+
+#myContent .input-panel {
+    background-color: #D9D9D9;
+}
+
+#myContent .text-panel p,
+#myContent .input-panel p {
+    margin: 0;
+    text-align: center;
+    padding: 8px 0;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#myContent .form-control {
+    margin: 5px 0;
+    text-align: center;
+    font-size: 1em;
+    height: 26px;
+}
+
+#myContent .bottom-text-panel {
+    border-bottom-left-radius: 25px;
+}
+
+#myContent .bottom-input-panel {
+    border-bottom-right-radius: 25px;
+}
+
+#myContent .btn-default {
+    background-color: #995bbe;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#myContent #calculate-btn {
+    text-align: center;
+}
+
+#myContent #note p {
+    margin: 15px 0px;
+    text-align: center;
+    color: red;
+}
