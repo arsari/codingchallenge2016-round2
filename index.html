@@ -26,19 +26,19 @@
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<img alt="Grupo Arsari Logo" src="img/galogo.png" />
-					<p class="navbar-text">Greatest Integer | <span>v2.0.170228</span></p>
+					<p class="navbar-text">Greatest Integer | <span>v2.1.170301</span></p>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<main id="myContent">
-		<form method="post" name="intform" id="intform">
+		<form method="post" name="intForm" id="intForm">
 			<div class="container">
 				<div class="row row-sides">
 					<div class="main-box col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 						<div class="row">
 							<div class="col-xs-12" id="display">
-								<input type="text" value="output of 8 digits" onfocus="if(this.value == 'output of 8 digits') { this.value = ''; }" id="intnum" />
+								<input type="text" value="14 digits display" onfocus="if(this.value == '14 digits display') { this.value = ''; }" id="intNum" />
 							</div>
 						</div>
 						<div class="row">
@@ -121,8 +121,7 @@
 					</div>
 				</div>
 				<div id="note">
-					<p>Description: This web app takes as input an array of<br />integers numbers and returns the greatest integer
-						<br />result of combining those input numbers.</p>
+					<p>Description: This web app takes as input an array of<br />eight integers numbers and returns the greatest integer<br />number combination of those entered numbers.</p>
 				</div>
 			</div>
 		</form>
@@ -138,22 +137,22 @@
 		});
 
 		function solveIntForm(form) {
-			var inarray = []
-			inarray[0] = form.integer1.value;
-			inarray[1] = form.integer2.value;
-			inarray[2] = form.integer3.value;
-			inarray[3] = form.integer4.value;
-			inarray[4] = form.integer5.value;
-			inarray[5] = form.integer6.value;
-			inarray[6] = form.integer7.value;
-			inarray[7] = form.integer8.value;
+			var intArray = []
+			intArray[0] = form.integer1.value;
+			intArray[1] = form.integer2.value;
+			intArray[2] = form.integer3.value;
+			intArray[3] = form.integer4.value;
+			intArray[4] = form.integer5.value;
+			intArray[5] = form.integer6.value;
+			intArray[6] = form.integer7.value;
+			intArray[7] = form.integer8.value;
 
-			var myarray = inarray.sort();
-			myarray = inarray.reverse();
+			var myArray = intArray.sort();
+			myArray = intArray.reverse();
 
-			var outarray = myarray.join('');
+			var resultNumber = myArray.join('');
 
-			$('#intnum').val(outarray.substring(0, 8));
+			$('#intNum').val(resultNumber.substring(0, 14));
 		}
 	</script>
 </body>
