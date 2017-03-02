@@ -49,7 +49,7 @@
     border-top-right-radius: 25px;
 }
 
-#myContent #intNum {
+#myContent #intResult {
     background-color: #333333;
     border: 0;
     width: calc(100% - 5px);
@@ -80,7 +80,8 @@
     background-color: #D9D9D9;
 }
 
-#myContent .text-panel p, #myContent .input-panel p {
+#myContent .text-panel p,
+#myContent .input-panel p {
     margin: 0;
     text-align: center;
     padding: 8px 0;
